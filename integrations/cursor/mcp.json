@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "cursor-guard": {
+      "command": "npx",
+      "args": ["-y", "cursor-guard"],
+      "env": {
+        "GUARD_AUTO_CHECKPOINT": "true",
+        "GUARD_AUTO_ROLLBACK": "true",
+        "GUARD_TEST_COMMAND": "npm test"
+      }
+    }
+  }
+}

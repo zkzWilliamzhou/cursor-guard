@@ -1,0 +1,60 @@
+{
+  "name": "cursor-guard",
+  "version": "1.0.0",
+  "description": "AI Code Change Safety Net - Professional workflow protection, rollback & audit system for Cursor AI Agent",
+  "keywords": [
+    "cursor",
+    "ai-guard",
+    "code-safety",
+    "rollback",
+    "audit",
+    "checkpoint",
+    "ai-coding",
+    "mcp"
+  ],
+  "author": "CursorGuard Contributors",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cursor-guard/cursor-guard.git"
+  },
+  "homepage": "https://github.com/cursor-guard/cursor-guard#readme",
+  "bugs": {
+    "url": "https://github.com/cursor-guard/cursor-guard/issues"
+  },
+  "bin": {
+    "cursor-guard": "./cli/index.js"
+  },
+  "files": [
+    "cli",
+    "packages",
+    "integrations"
+  ],
+  "main": "cli/index.js",
+  "scripts": {
+    "start": "node cli/index.js",
+    "dev": "node cli/index.js --dev",
+    "test": "node test/run-tests.js",
+    "audit": "node scripts/audit.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "better-sqlite3": "^9.4.0",
+    "fastify": "^5.12.5",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "minimist": "^1.2.8",
+    "commander": "^12.0.0",
+    "chokidar": "^3.6.0",
+    "diff": "^5.2.0"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "nodemon": "^3.0.0",
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
